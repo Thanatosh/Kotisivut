@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotisivut</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jonin Kotisivut</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Harrastukset.html">Harrastukset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Opinnot.html">Opinnot</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Työkokemus.html">Työkokemus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Tervetuloa Jonin kotisivuille!</h1>
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <p class="text-center">Hei,</p>
+                <p class="text-center">Olen Joni Hostikka 35v.</p>
+                <p class="text-center">Näiltä sivuilta löytyvät lyhyesti tiedot opinnoistani, harrastuksistani ja aikaisemmasta työkokemuksestani</p>
+                <p class="text-center">Voit tavoittaa minut seuraavalla lomakkeella opiskeluni ajan</p>
+            </div>
+        </div>
+    </div>
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Ota yhteyttä</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kuhmo,+Suomi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Nimi">
+                    <input type="email" class="form-control mt-3" placeholder="Sähköposti">
+                    <input type="text" class="form-control mt-3" placeholder="Aihe">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Tarkemmat tiedot"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Ota Yhteyttä</button>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
